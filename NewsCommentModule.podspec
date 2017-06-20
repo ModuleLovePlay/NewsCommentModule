@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "NewsCommentModule"
-  s.version      = "1"
+  s.version      = "1.0.1"
   s.summary      = "NewsCommentModule."
 
   # This description is used to generate tags and improve search results.
@@ -96,6 +96,9 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
 
+  s.subspec 'View' do |sp|
+    sp.source_files = 'NewsCommentModule/NewsCommentModule/View/*.{h,m}'
+  end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
