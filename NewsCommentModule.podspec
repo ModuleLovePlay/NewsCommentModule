@@ -96,12 +96,12 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
 
-  # s.subspec 'View' do |sp|
-  #   sp.source_files = 'NewsCommentModule/NewsCommentModule/View/*.{h,m}'
-  #   sp.dependency 'Macros'
-  #   sp.dependency 'YYKit'
-  #   sp.dependency 'Masonry'
-  # end
+  s.subspec 'View' do |sp|
+    sp.source_files = 'NewsCommentModule/NewsCommentModule/View/**/*.{h,m}'
+    sp.dependency 'Macros'
+    sp.dependency 'YYKit'
+    sp.dependency 'Masonry'
+  end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
