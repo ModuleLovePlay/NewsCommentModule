@@ -91,16 +91,37 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "NewsCommentModule/NewsCommentModule/**/*.{h,m}"
+  # s.source_files  = "NewsCommentModule/NewsCommentModule/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
-  s.subspec 'View' do |sp|
-    sp.source_files = 'NewsCommentModule/NewsCommentModule/View/**/*.{h,m}'
-    sp.dependency 'Macros'
-    sp.dependency 'YYKit'
-    sp.dependency 'Masonry'
+  s.default_subspecs = 'Model', 'View', 'Controller'
+
+  s.subspec 'Model' do |ss|
+  	ss.source_files = 'NewsCommentModule/NewsCommentModule/Model/*.{h,m}'
+
+  	ss.dependency = 'YYKit'
+  end
+
+
+  s.subspec 'View' do |ss|
+    ss.source_files = 'NewsCommentModule/NewsCommentModule/View/*.{h,m}'
+
+    ss.dependency 'Macros'
+    ss.dependency 'YYKit'
+    ss.dependency 'Masonry'
+  end
+
+  s.subspec 'Controller' do |ss|
+  	ss.source_files = 'NewsCommentModule/NewsCommentModule/Controller/*.{h,m}'
+
+    ss.dependency 'Macros'
+    ss.dependency 'YYKit'
+    ss.dependency 'Network'
+
+    ss.dependency 'NewsCommentModule/Model'
+    ss.dependency 'NewsCommentModule/View'
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -142,8 +163,8 @@ Pod::Spec.new do |s|
   # s.dependency "BLNetworking"
   # s.dependency "BLAPIManagers"
   # s.dependency "BLMediator"
-  s.dependency 'Macros'
-  s.dependency 'Network'
-  s.dependency 'YYKit'
-  s.dependency 'Masonry'
+  # s.dependency 'Macros'
+  # s.dependency 'Network'
+  # s.dependency 'YYKit'
+  # s.dependency 'Masonry'
 end
