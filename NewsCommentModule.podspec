@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "NewsCommentModule"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "NewsCommentModule."
 
   # This description is used to generate tags and improve search results.
@@ -96,7 +96,7 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
 
-  s.default_subspecs = 'Model', 'View', 'Controller'
+  s.default_subspecs = 'Model', 'View', 'Controller', 'Targets'
 
   s.subspec 'Model' do |ss|
   	ss.source_files = 'NewsCommentModule/NewsCommentModule/Model/*.{h,m}'
@@ -126,6 +126,11 @@ Pod::Spec.new do |s|
     ss.dependency 'NewsCommentModule/View'
   end
 
+  s.subspec 'Targets' do |ss|
+    ss.source_files = 'NewsCommentModule/NewsCommentModule/Targets/*.{h,m}'
+
+    ss.dependency 'NewsCommentModule/Controller'
+  end
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
