@@ -11,7 +11,7 @@
 #import "NewsCommentModel.h"
 //V
 #import "NewsCommentCellNode.h"
-#import "NewsCommentSectionTitleHeaderView.h"
+#import "NewsCommentSectionTitleHeader.h"
 //Tool
 #import <YYKit/YYKit.h>
 #import <Masonry/Masonry.h>
@@ -117,7 +117,7 @@ NSString * const NewsLatestCommentHost = @"/news/v2/newtie";
 #pragma mark - tableView delegate
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    NewsCommentSectionTitleHeaderView *headerView = [NewsCommentSectionTitleHeaderView sectionHeaderWithTableView:tableView];
+    NewsCommentSectionTitleHeader *headerView = [NewsCommentSectionTitleHeader sectionHeaderWithTableView:tableView];
 
     switch (section) {
         case 0:

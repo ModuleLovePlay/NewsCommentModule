@@ -1,30 +1,30 @@
 //
-//  NewsCommentSectionTitleHeaderView.m
+//  NewsCommentSectionTitleHeader.m
 //  NewsCommentModule
 //
 //  Created by Yuns on 2017/6/22.
 //  Copyright © 2017年 Yuns. All rights reserved.
 //
 
-#import "NewsCommentSectionTitleHeaderView.h"
+#import "NewsCommentSectionTitleHeader.h"
 
 #import <Macros/Macros.h>
 #import <Masonry/Masonry.h>
 
-@interface NewsCommentSectionTitleHeaderView ()
+@interface NewsCommentSectionTitleHeader ()
 //UI
 @property (nonatomic, strong) UIView *leftLineView;
 @property (nonatomic, strong) UILabel *titleTextLabel;
 @end
 
-@implementation NewsCommentSectionTitleHeaderView
+@implementation NewsCommentSectionTitleHeader
 
 + (instancetype)sectionHeaderWithTableView:(UITableView *)tableView
 {
-    static NSString *ID = @"NewsCommentSectionTitleHeaderView";
-    NewsCommentSectionTitleHeaderView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:ID];
+    static NSString *ID = @"NewsCommentSectionTitleHeader.h";
+    NewsCommentSectionTitleHeader *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:ID];
     if (header == nil) {
-        header = [[NewsCommentSectionTitleHeaderView alloc] initWithReuseIdentifier:ID];
+        header = [[NewsCommentSectionTitleHeader alloc] initWithReuseIdentifier:ID];
     }
     return header;
 }

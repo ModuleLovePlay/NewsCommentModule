@@ -1,5 +1,5 @@
 //
-//  NewsCommentSectionTitleHeaderView.h
+//  NewsCommentSectionTitleHeader.h
 //  NewsCommentModule
 //
 //  Created by Yuns on 2017/6/22.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewsCommentSectionTitleHeaderView : UITableViewHeaderFooterView
-
+@interface NewsCommentSectionTitleHeader : UITableViewHeaderFooterView
 #pragma mark - params
 @property (nonatomic, copy) NSString *title;
 
