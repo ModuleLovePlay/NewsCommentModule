@@ -19,8 +19,7 @@
 		A77E4CCD1EF818BD000FC643 /* NewsCommentCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A77E4CC21EF818BD000FC643 /* NewsCommentCellNode.m */; };
 		A77E4CCE1EF818BD000FC643 /* NewsCommentReplyAreaNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A77E4CC41EF818BD000FC643 /* NewsCommentReplyAreaNode.m */; };
 		A77E4CCF1EF818BD000FC643 /* NewsCommentReplyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A77E4CC61EF818BD000FC643 /* NewsCommentReplyNode.m */; };
-		A77E4CD01EF818BD000FC643 /* NewsDetailSectionCommentFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A77E4CC81EF818BD000FC643 /* NewsDetailSectionCommentFooterView.m */; };
-		A77E4CD11EF818BD000FC643 /* NewsDetailSectionTitleHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A77E4CCA1EF818BD000FC643 /* NewsDetailSectionTitleHeaderView.m */; };
+		A78FED9C1EFB62E400E94484 /* NewsCommentSectionTitleHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FED9B1EFB62E400E94484 /* NewsCommentSectionTitleHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,10 +44,8 @@
 		A77E4CC41EF818BD000FC643 /* NewsCommentReplyAreaNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCommentReplyAreaNode.m; sourceTree = "<group>"; };
 		A77E4CC51EF818BD000FC643 /* NewsCommentReplyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCommentReplyNode.h; sourceTree = "<group>"; };
 		A77E4CC61EF818BD000FC643 /* NewsCommentReplyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCommentReplyNode.m; sourceTree = "<group>"; };
-		A77E4CC71EF818BD000FC643 /* NewsDetailSectionCommentFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailSectionCommentFooterView.h; sourceTree = "<group>"; };
-		A77E4CC81EF818BD000FC643 /* NewsDetailSectionCommentFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailSectionCommentFooterView.m; sourceTree = "<group>"; };
-		A77E4CC91EF818BD000FC643 /* NewsDetailSectionTitleHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailSectionTitleHeaderView.h; sourceTree = "<group>"; };
-		A77E4CCA1EF818BD000FC643 /* NewsDetailSectionTitleHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailSectionTitleHeaderView.m; sourceTree = "<group>"; };
+		A78FED9A1EFB62E400E94484 /* NewsCommentSectionTitleHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCommentSectionTitleHeaderView.h; sourceTree = "<group>"; };
+		A78FED9B1EFB62E400E94484 /* NewsCommentSectionTitleHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCommentSectionTitleHeaderView.m; sourceTree = "<group>"; };
 		BD2F0164B4302DA18F78A7D9 /* libPods-NewsCommentModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewsCommentModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E268A29DCECEF816924CA405 /* Pods-NewsCommentModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsCommentModule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsCommentModule/Pods-NewsCommentModule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,10 +151,8 @@
 				A77E4CC41EF818BD000FC643 /* NewsCommentReplyAreaNode.m */,
 				A77E4CC51EF818BD000FC643 /* NewsCommentReplyNode.h */,
 				A77E4CC61EF818BD000FC643 /* NewsCommentReplyNode.m */,
-				A77E4CC91EF818BD000FC643 /* NewsDetailSectionTitleHeaderView.h */,
-				A77E4CCA1EF818BD000FC643 /* NewsDetailSectionTitleHeaderView.m */,
-				A77E4CC71EF818BD000FC643 /* NewsDetailSectionCommentFooterView.h */,
-				A77E4CC81EF818BD000FC643 /* NewsDetailSectionCommentFooterView.m */,
+				A78FED9A1EFB62E400E94484 /* NewsCommentSectionTitleHeaderView.h */,
+				A78FED9B1EFB62E400E94484 /* NewsCommentSectionTitleHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -296,11 +291,10 @@
 				A77E4CAA1EF81769000FC643 /* ViewController.m in Sources */,
 				A77E4CCC1EF818BD000FC643 /* NewsCommentModel.m in Sources */,
 				A77E4CCF1EF818BD000FC643 /* NewsCommentReplyNode.m in Sources */,
+				A78FED9C1EFB62E400E94484 /* NewsCommentSectionTitleHeaderView.m in Sources */,
 				A77E4CCB1EF818BD000FC643 /* NewsCommentViewController.m in Sources */,
 				A77E4CCE1EF818BD000FC643 /* NewsCommentReplyAreaNode.m in Sources */,
 				A77E4CA71EF81769000FC643 /* AppDelegate.m in Sources */,
-				A77E4CD01EF818BD000FC643 /* NewsDetailSectionCommentFooterView.m in Sources */,
-				A77E4CD11EF818BD000FC643 /* NewsDetailSectionTitleHeaderView.m in Sources */,
 				A77E4CA41EF81769000FC643 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

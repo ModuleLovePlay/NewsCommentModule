@@ -1,14 +1,14 @@
 //
-//  NewsDetailSectionTitleHeaderView.h
-//  LovePlay
+//  NewsCommentSectionTitleHeaderView.h
+//  NewsCommentModule
 //
-//  Created by weiying on 2017/2/7.
+//  Created by Yuns on 2017/6/22.
 //  Copyright © 2017年 Yuns. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface NewsDetailSectionTitleHeaderView : UITableViewHeaderFooterView
+@interface NewsCommentSectionTitleHeaderView : UITableViewHeaderFooterView
 
 #pragma mark - params
 @property (nonatomic, copy) NSString *title;
