@@ -111,6 +111,8 @@ Pod::Spec.new do |s|
     ss.dependency 'Macros'
     ss.dependency 'YYKit'
     ss.dependency 'Masonry'
+
+    ss.dependency 'NewsCommentModule/Model'
   end
 
   s.subspec 'Controller' do |ss|
