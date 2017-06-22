@@ -101,7 +101,7 @@ Pod::Spec.new do |s|
   s.subspec 'Model' do |ss|
   	ss.source_files = 'NewsCommentModule/NewsCommentModule/Model/*.{h,m}'
 
-  	ss.dependency = 'YYKit'
+  	ss.dependency 'YYKit'
   end
 
 
